@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(13,27,76,0.85), rgba(13,27,76,0.85)),
+                url("BPL.jpeg") center/cover no-repeat fixed;
+    color: white;
+}
+
+/* TOP BAR */
+.topbar {
+    background: #1f3c88;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+/* HEADER */
+header {
+    background: #0d1b4c;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.reg-btn {
+    border: 2px solid #ffd700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 50px 15px;
+}
+
+.hero h1 {
+    color: #ffd700;
+    font-size: 32px;
+}
+
+.hero h2 {
+    font-size: 20px;
+}
+
+/* MATCHES */
+.match-section {
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.match-card {
+    background: white;
+    color: #0d1b4c;
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.badge {
+    background: #1f3c88;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.time {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.vs {
+    background: #0d1b4c;
+    color: #ffd700;
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+
+/* TABLE */
+.points-section {
+    padding: 30px 10px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 600px;
+    background: white;
+    color: #0d1b4c;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #0d1b4c;
+    color: #ffd700;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* 📱 MOBILE FIX */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .teams {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
